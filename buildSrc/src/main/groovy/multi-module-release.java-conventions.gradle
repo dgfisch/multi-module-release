@@ -1,0 +1,13 @@
+plugins {
+	id 'java'
+    id 'checkstyle'
+    id 'com.github.spotbugs'
+}
+
+repositories {
+    mavenCentral()
+}
+
+test {
+    useJUnitPlatform()
+}

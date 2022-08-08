@@ -1,0 +1,18 @@
+plugins {
+	id 'multi-module-release.java-conventions'
+	id 'pl.allegro.tech.build.axion-release'
+	id "com.dorongold.task-tree"
+}
+
+version = scmVersion.version
+
+scmVersion {
+	repository {
+        directory = project.rootProject.file('../')
+    }
+}
+
+repositories {
+    mavenCentral()
+    gradlePluginPortal()
+}

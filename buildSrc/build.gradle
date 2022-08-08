@@ -1,0 +1,20 @@
+plugins {
+    id 'groovy-gradle-plugin'
+}
+
+repositories {
+    mavenCentral()
+    gradlePluginPortal()
+}
+
+test {
+    useJUnitPlatform()
+}
+
+dependencies {
+    implementation 'pl.allegro.tech.build:axion-release-plugin:1.14.0'
+    implementation 'com.dorongold.task-tree:com.dorongold.task-tree.gradle.plugin:2.1.0'
+    implementation 'com.github.spotbugs.snom:spotbugs-gradle-plugin:5.0.9'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
+}

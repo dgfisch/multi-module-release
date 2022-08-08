@@ -1,0 +1,3 @@
+plugins {
+    id 'multi-module-release.java-conventions'
+}
