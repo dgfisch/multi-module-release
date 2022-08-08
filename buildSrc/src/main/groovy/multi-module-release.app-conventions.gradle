@@ -6,11 +6,11 @@ plugins {
 
 version = scmVersion.version
 
-scmVersion {
-	repository {
-        directory = project.rootProject.file('../')
-    }
-}
+// scmVersion {
+// 	repository {
+//         directory = project.rootProject.file('../')
+//     }
+// }
 
 repositories {
     mavenCentral()
